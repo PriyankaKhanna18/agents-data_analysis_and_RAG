@@ -1,0 +1,41 @@
+# --- Secrets -----------------------------------------------------------------
+# Real API keys live in .env. Only the template (.env.example) is committed.
+.env
+.env.*
+!.env.example
+
+# --- Python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# --- LangGraph dev server ----------------------------------------------------
+# Local checkpoints / store pickles from `langgraph dev` (contain chat history).
+.langgraph_api/
+
+# --- Generated agent artefacts -----------------------------------------------
+# RAG vector index: ~17 MB, rebuilt automatically on first run.
+rag_agent/docs_index.json
+
+# Sandbox agent's throwaway workspace (recreated by Sandbox.py).
+agent_workspace/
+
+# Data analyst workspace: keep the source dataset, ignore agent output
+# (scripts, charts, reports, copied skills, sample CSV).
+analysis_workspace/*
+!analysis_workspace/Walmart_Sales.csv
+
+# --- Course material & editor/OS files ---------------------------------------
+# Assignment briefs are course-provided; remove this line to publish them.
+DQ_*.pdf
+# Office lock files
+~$*
+.DS_Store
+.vscode/
+.idea/

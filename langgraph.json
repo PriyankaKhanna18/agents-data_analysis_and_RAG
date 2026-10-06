@@ -1,0 +1,13 @@
+{
+  "dependencies": [
+    "."
+  ],
+  "graphs": {
+    "data_analyst": "./deep_agent_from_scratch.py:agent",
+    "rag_agent": "./rag_agent/rag_agent.py:agent"
+  },
+  "http": {
+    "app": "./chart_server.py:app"
+  },
+  "env": ".env"
+}
