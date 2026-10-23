@@ -4,7 +4,11 @@
   ],
   "graphs": {
     "data_analyst": "./deep_agent_from_scratch.py:agent",
-    "rag_agent": "./rag_agent/rag_agent.py:agent"
+    "rag_agent": "./rag_agent/rag_agent.py:agent",
+    "skills_agent": "./Homework3/skills_agent/skills_agent.py:agent",
+    "memory_agent": "./Homework3/skills_agent/memory_agent.py:agent",
+    "sub_agent": "./Homework3/sub_agent.py:agent",
+    "grading_rubric": "./Homework3/grading_rubric.py:agent"
   },
   "http": {
     "app": "./chart_server.py:app"
